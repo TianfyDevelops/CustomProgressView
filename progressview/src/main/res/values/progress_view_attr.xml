@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressView">
+        <!--填充颜色-->
+        <attr name="progressView_solidColor" format="color" />
+        <!--边框颜色-->
+        <attr name="progressView_storkeColor" format="color" />
+        <!--动画时长-->
+        <attr name="progressView_duration" format="float" />
+        <!--圆角值-->
+        <attr name="progressView_radius" format="dimension" />
+        <!--padding-->
+        <attr name="progressView_padding" format="dimension" />
+
+    </declare-styleable>
+
+
+</resources>

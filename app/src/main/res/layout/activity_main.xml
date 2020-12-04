@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.tianfy.progressview.ProgressView
+        android:id="@+id/progress_view"
+        android:layout_width="wrap_content"
+        app:progressView_solidColor="@color/colorAccent"
+        app:progressView_storkeColor="@color/colorPrimary"
+        app:progressView_radius="5dp"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btn_startAnim"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:text="开始动画"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_endAnim"
+        android:layout_width="wrap_content"
+        android:text="结束动画"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_cancelAnim"
+        android:layout_width="wrap_content"
+        android:text="取消动画"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
