@@ -193,7 +193,7 @@ public class ProgressView extends View {
 
 
     /**
-     * set view background color
+     * 设置填充色
      *
      * @param color
      */
@@ -202,7 +202,11 @@ public class ProgressView extends View {
         initSloidPain(solidColor);
     }
 
-
+    /**
+     * 设置边框的颜色
+     *
+     * @param color
+     */
     public void setStorkeColor(int color) {
         this.storkeColor = color;
         initStrokePain(solidColor);
@@ -210,7 +214,7 @@ public class ProgressView extends View {
 
 
     /**
-     * set view round radius
+     * 设置圆角值
      *
      * @param radius
      */
@@ -219,13 +223,24 @@ public class ProgressView extends View {
     }
 
     /**
-     * set anim duration
+     * 设置动画持续时间
      *
      * @param duration
      */
     public void setDuration(long duration) {
         this.duration = duration;
     }
+
+    /**
+     * 设置边框和填充之间的间距
+     *
+     * @param padding
+     */
+    public void setPadding(long padding) {
+        if (padding < 0) return;
+        this.padding = dp2px(padding);
+    }
+
 
     /**
      * 返回属性动画实例，可用于动画进度监听做后续操作
