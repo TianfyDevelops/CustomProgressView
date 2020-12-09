@@ -77,7 +77,7 @@ public class ProgressView extends View {
         //动画持续时间
         duration = (long) typedArray.getFloat(R.styleable.ProgressView_progressView_duration, this.duration);
         //默认padding
-        float mPadding = (long) typedArray.getFloat(R.styleable.ProgressView_progressView_padding, this.padding);
+        float mPadding = (long) typedArray.getDimension(R.styleable.ProgressView_progressView_padding, this.padding);
 
         typedArray.recycle();
         /* dp转px */

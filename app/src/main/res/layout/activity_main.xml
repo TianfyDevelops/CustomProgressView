@@ -14,6 +14,8 @@
         app:progressView_solidColor="@color/colorAccent"
         app:progressView_storkeColor="@color/colorPrimary"
         app:progressView_radius="5dp"
+        app:progressView_padding="4dp"
+        app:progressView_duration="15000"
         android:layout_height="wrap_content" />
 
 
